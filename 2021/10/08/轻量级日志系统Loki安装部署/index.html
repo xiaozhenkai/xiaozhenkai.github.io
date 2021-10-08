@@ -157,7 +157,7 @@ var _hmt = _hmt || [];
 <div class="article-meta">
 	
 	<span>John Doe</span>
-	<span>2021-10-08 19:48:05</span>
+	<span>2021-10-08 20:02:34</span>
 		<div id="article-categories">
     
 		<span>Categories：</span>
@@ -205,13 +205,13 @@ var _hmt = _hmt || [];
 <p>服务正常，浏览器打开grafana，地址是<strong><a target="_blank" rel="noopener" href="http://ip:3000/">http://IP:3000</a></strong></p>
 <p>输入默认账号密码 <code>admin/admin</code>，登录后提示修改密码，修改完之后进入界面</p>
 <p>点击左侧-<em>Configuration</em>-<em>Data Sources</em></p>
-<p><img src="assets/loki-1.png" alt="image-20210604095919496"></p>
+<p><img src="/images/loki-1.png" alt="image-20210604095919496"></p>
 <p>添加 data source ，选择 Loki，在URL一栏里填<em><a target="_blank" rel="noopener" href="http://127.0.0.1:3100/">http://127.0.0.1:3100</a></em>，然后点<em>Save &amp; Test</em></p>
-<p><img src="assets/Loki-2.png" alt="image-20210604100315847"></p>
+<p><img src="/images/Loki-2.png" alt="image-20210604100315847"></p>
 <p>保存后点击左侧菜单 Explore</p>
-<p><img src="assets/Loki-3.png" alt="image-20210604100523739"></p>
+<p><img src="/images/Loki-3.png" alt="image-20210604100523739"></p>
 <p>选择日期，选择左侧的标签，Log labels - job - nginxlogs，然后点 Run Query 就能看到手机的日志了。</p>
-<p><img src="assets/Loki-explore.png" alt="image-20210604101045701"></p>
+<p><img src="/images/Loki-explore.png" alt="image-20210604101045701"></p>
 <p>还可以通过语法来过滤日志：</p>
 <figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;job=<span class="string">&quot;nginxlogs&quot;</span>&#125;<span class="string">|= &quot;</span><span class="number">20</span>:<span class="number">41</span><span class="string">&quot;|= &quot;</span>images<span class="string">&quot;</span></span><br></pre></td></tr></table></figure>
 
