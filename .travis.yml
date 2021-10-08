@@ -1,13 +1,3 @@
-sudo: false
-language: node_js
-node_js:
-  - 10 # use nodejs v10 LTS
-cache: npm
-branches:
-  only:
-    - main # build main branch only
-script:
-  - hexo generate # generate static files
 deploy:
   provider: pages
   skip-cleanup: true
