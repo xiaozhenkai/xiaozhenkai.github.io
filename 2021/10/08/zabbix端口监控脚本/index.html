@@ -193,7 +193,7 @@ var _hmt = _hmt || [];
 <div id="article-content">
 	<h1 id="zabbix端口监控脚本"><a class="header-anchor" href="#zabbix端口监控脚本"></a>zabbix端口监控脚本</h1>
 <h3 id="创建脚本check-port-add-sh"><a class="header-anchor" href="#创建脚本check-port-add-sh"></a>创建脚本<code>check_port_add.sh</code></h3>
-<pre><code>#!/bin/bash 
+<pre><code class="language-shell">#!/bin/bash 
 
 #判断脚本是否存在
 #判断端口是否已经存在，如果存在则不添加，不存在的话添加
@@ -233,7 +233,7 @@ echo &quot;systemctl restart zabbix-agent&quot;
 
 </code></pre>
 <p><code>/etc/zabbix/zabbix_agentd.d/externalscripts/check_port.py</code> 内容</p>
-<pre><code>#!/usr/bin/env python
+<pre><code class="language-python">#!/usr/bin/env python
 #coding:utf-8
 
 import json
@@ -257,7 +257,7 @@ print jsonStr
 </code></pre>
 <h3 id="怎么使用"><a class="header-anchor" href="#怎么使用"></a>怎么使用</h3>
 <p>配合 <code>/root/deploy/deploy.sh</code> 部署脚本使用，在部署脚本最后添加函数</p>
-<pre><code>#函数
+<pre><code class="language-bash">#函数
 zabbix()&#123;
    bash /opt/script/check_port_add.sh $server_port $prj_script
 &#125;
@@ -268,7 +268,7 @@ zabbix
 </code></pre>
 <p>jenkins那边构建的时候就会自动执行这个脚本</p>
 <p>执行成功之后check_port.py就会多一行</p>
-<pre><code>&#123;&quot;&#123;#TCP_PORT&#125;&quot;:&quot;25114&quot;,&quot;&#123;#SERVICE_NAME&#125;&quot;:&quot;service-channel-open&quot;&#125;,
+<pre><code class="language-python">&#123;&quot;&#123;#TCP_PORT&#125;&quot;:&quot;25114&quot;,&quot;&#123;#SERVICE_NAME&#125;&quot;:&quot;service-channel-open&quot;&#125;,
 </code></pre>
 <p>zabbix就会检测到</p>
 
