@@ -135,6 +135,15 @@ var _hmt = _hmt || [];
 			
 							<ul>
 								<li class="file">
+									<a href="/2021/05/27/zabbix%E5%9B%BE%E5%BD%A2%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E7%9A%84%E9%97%AE%E9%A2%98/">
+										zabbix图形中文乱码的问题
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
 									<a href="/2021/10/08/zabbix%E7%AB%AF%E5%8F%A3%E7%9B%91%E6%8E%A7%E8%84%9A%E6%9C%AC/">
 										zabbix端口监控脚本
 									</a>
@@ -204,12 +213,39 @@ var _hmt = _hmt || [];
 					zabbix端口监控脚本
 				</h2>
 				<div class="index-brief">
-					zabbix端口监控脚本创建脚本check_port_add.sh1234567891011121314151617181920212223242526272829303132333435363738#!/bin/bash#判断脚本是否存在#判断端口是否已经存在，如果存在则不添加，不存在的话添加ZA
+					zabbix端口监控脚本
+创建脚本check_port_add.sh
+#!/bin/bash 
+
+#判断脚本是否存在
+#判断端口是否已经存在，如果存在则不添加，不存在的话添加
+
+ZABBIX_CONF_FILE=/etc/zabbix/zabbix_agentd.d/externalscripts/
 					...
 				</div>
 			</a>
                 <div class="article-meta">
 				    <span>2021-10-08</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2021/05/27/zabbix%E5%9B%BE%E5%BD%A2%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E7%9A%84%E9%97%AE%E9%A2%98/">
+				<h2 class="index-title">
+					zabbix图形中文乱码的问题
+				</h2>
+				<div class="index-brief">
+					zabbix字体目录：/data/www/zabbix/assets/fonts
+配置文件：/data/www/zabbix/include/defines.inc.php
+1、首先在本地电脑找一个字体文件，我这里用的是楷体的simkai.ttf，传到服务器zabbix的字体目录/data/www/
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-27</span>
                     
                             
                     
